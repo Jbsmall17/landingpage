@@ -657,6 +657,8 @@ div.forth-div > div.div-1 > div{
     height: 3.5625rem;
     border-radius: .75rem;
     padding: .5rem .75rem;
+    border:none;
+    border: 1px solid var(--primary-100, #3284FF);
 }
 .input-div2{
     width: 100%;
@@ -740,4 +742,88 @@ img.vector3{
 img.vector4{
     top: 0;
     left: 0;
+}
+div.fifth-div{
+    width: 100vw;
+    height: 1153px;
+    background: var(--neutral-white, #FFF);
+    padding: 2.6875rem 20.25rem 9.6875rem 20.25rem;
+}
+.main-div{
+    height: 59.6875rem;
+    width: 49.5rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.main-div .div-first{
+    width:7rem;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;    
+}
+.main-div .div-first h3{
+    color: var(--text-color-main-text, #141414);
+    font-size: 2.5rem;
+    font-family: Gilroy-Bold;
+    line-height: 2rem;
+}
+div.main-div div.div-second{
+    height: 52.6875rem;
+    width: 49.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+div.main-div div.div-second div.active{
+    position: relative;
+    height: 7.9375rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+div.main-div div.div-second div.active::after{
+    content: "-";
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+div.main-div div.div-second div.active p{
+    color: var(--text-color-main-text, #141414);
+    font-size: 1.25rem;
+    line-height: 2rem; 
+}
+div.main-div div.div-second div.active p:nth-of-type(2){
+    height: 3.9375rem;
+    font-size: 1rem;
+}
+div.main-div div.div-second div.show{
+    height:auto;
+}
+div.main-div div.div-second div.show p{
+    position: relative;
+    color: var(--text-color-main-text, #141414);
+    font-size: 1.25rem;
+    line-height: 2rem;
+}
+div.main-div div.div-second div.show p::after{
+    content: "+";
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 24px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
 }
