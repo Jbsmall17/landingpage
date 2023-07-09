@@ -351,16 +351,16 @@ div.third-div{
     
 }
 div.third-div > div:nth-of-type(2){
-    width: 36rem;
+    width: 37.5rem;
     display: flex;
-    justify-content: space-between;
+    gap: 1rem; 
 }
 div.third-div > div:nth-of-type(2) > img{
     width: .85rem;
     height:100%;
 }
 div.third-div > div:nth-of-type(2) > div{
-    width: 34.75rem;
+    flex: 1;
 }
 div.third-div > div:nth-of-type(2) > div >p:nth-of-type(1){
     color: #141414;
@@ -674,7 +674,7 @@ div.main-div div.div-second{
     flex-direction: column;
     gap: 2rem;
 }
-div.main-div div.div-second div.active{
+div.main-div div.div-second  div{
     position: relative;
 }
 div.main-div div.div-second div.active::after{
@@ -692,29 +692,35 @@ div.main-div div.div-second div.active::after{
 div.main-div div.div-second div.active p{
     color: var(--text-color-main-text, #141414);
      font-size: 1.25rem;
-     /* font-weight: bold;  */
      line-height: 2rem;
+     padding-right: 1rem; 
 }
 div.main-div div.div-second div.active p:nth-of-type(1){
     font-weight: bold;
-    margin-bottom: 1rem; 
+    margin-bottom: 1rem;
 }
 div.main-div div.div-second div.active p:nth-of-type(2){
+    display: block;
     font-size: 1rem;
 }
-div.main-div div.div-second div.show p{
-    position: relative;
+div.main-div div.div-second div p{
     color: var(--text-color-main-text, #141414);
     font-size: 1.25rem;
     line-height: 2rem;
+    padding-right: 2rem;
 }
-div.main-div div.div-second div.show p::after{
+div.main-div div.div-second div p.answer{
+    display: none;
+}
+/* :not(div:first-child) > p.answer{
+    display: none;
+} */
+div.main-div div.div-second div::after{
     content: "+";
     position: absolute;
     top:0;
     right: 0;
     width: 24px;
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -909,13 +915,11 @@ div.footer-end > ul{
     display: inline-flex;
     list-style: none;
     /* padding: 0px .75rem; */
-    width: 17rem;
     height:1.25rem;
     gap: .5rem;   
 }
 div.footer-end > ul > li{
     font-size: .875rem;
-    width:fit-content;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -979,6 +983,15 @@ div.footer-end > ul > li > img{
     .active .menu, .menu.close{
         display: none;
     }
+    .input-div2{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .input-div2 > .input-2, 
+    .input-div2 > .input-3{
+        width: 100%;
+    }
 }
 @media screen and (max-width:768px){
     html{
@@ -987,6 +1000,6 @@ div.footer-end > ul > li > img{
 }
  @media screen and (max-width:480px){
     html{
-        font-size: 6px;
+        font-size: 5px;
     }
 }
