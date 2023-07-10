@@ -1020,14 +1020,12 @@ div.footer-end > ul > li > img{
         margin-bottom: 2rem;       
     }
     div.slider-main > .pkg > .price{
-        color: var(--text-color-main-text);
         font-size: 2.5rem;
         line-height: 3rem;
         margin-bottom: .5rem; 
     }
     div.slider-main > .pkg > .desc{
-        color: var(--text-color-main-text);
-        font-size: 1.25rem;
+        font-size: 1.5rem;
         line-height: 2rem;
         margin-bottom: 1rem;
     }
@@ -1041,8 +1039,7 @@ div.footer-end > ul > li > img{
         
     }
     div.slider-main > .pkg > .list > li{
-        color: var(--text-color-main-text);
-        font-size: .875rem;
+        font-size: 1rem;
         line-height: 1.5rem;
     }
     img.left{
@@ -1066,6 +1063,6 @@ div.footer-end > ul > li > img{
 }
  @media screen and (max-width:480px){
     html{
-        font-size: 5px;
+        font-size: 6px;
     }
 }
